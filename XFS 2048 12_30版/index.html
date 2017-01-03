@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+  
+  <title>挑战老司机：跨年红包乐</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon2.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+    <img src="share.png" width='700'>
+  </div>
+  <div id="modal-win" class="modal">
+    <div class="modal-wrap">
+      <div class="modal-imgwrap">
+        <div class="modal-img">
+          <img src="./style/image/gamewin.png" alt="">
+        </div>
+        <p class="modal-title1">真是名副其实的老司机</p>
+        <p class="modal-title2">长按识别二维码来秀一下战绩吧</p>
+        <a href="javascript:;" onClick="closeModal()" class="closeModal">x</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-lose" class="modal">
+    <div class="modal-wrap">
+    <div class="modal-imgwrap">
+      <div class="modal-img">
+        <img src="./style/image/gamelose.png" alt="">
+      </div>
+      <p class="modal-title1">套路玩的深，谁输谁认真</p>
+      <p class="modal-title2">来芝麻君这里求安慰</p>
+      <a href="javascript:;" onClick="closeModal()" class="closeModal">x</a>
+    </div>   
+    </div> 
+  </div>
+   <div class="heading" style="position:relative;">
+      <h1 class="title"><img src="style/image/logo.png" alt="" width="100%"></h1>
+    </div>
+  <div class="container">
+
+
+    <div class="above-game">
+      <div class="game-intro">          
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+      <a class="restart-button">重新开始</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p>
+        </p>
+        <div class="lower">
+	        <a class="keep-playing-button"></a>
+          <a class="retry-button"></a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <div class="game-explanation">
+        <div class="game-exp-right">
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzNzIwMjQwOA==&scene=110#wechat_redirect">芝麻大事更精彩</a>
+      </div>
+      <div class="game-exp-left">
+          <strong class="important">玩法:</strong> 两块<strong>相同的方块</strong>相碰,组成下一个方块！闯关成功后，赢取<strong>跨年红包</strong>!
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
+<script>
+    function closeModal(){
+      console.log('a');
+      document.getElementById('modal-win').style.display='none';
+      document.getElementById('modal-lose').style.display='none';
+   }
+</script>
